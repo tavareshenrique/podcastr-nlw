@@ -9,7 +9,7 @@ import { ptBR } from "date-fns/locale";
 
 import { api } from "../../services/api"
 
-// import { usePlayer } from "../../contexts/PlayerContext";
+import { usePlayer } from "../../contexts/PlayerContext";
 
 import { convertDurationToTimeString } from "../../utils/convertDurationToTimeString";
 
@@ -32,8 +32,9 @@ type EpisodeProps = {
 }
 
 export default function Episode({ episode }: EpisodeProps ) {
-  // const { play } = usePlayer()
   const router = useRouter()
+
+  const { play } = usePlayer()
 
   if (router.isFallback) {
     return <p>Carregando...</p>
@@ -57,7 +58,7 @@ export default function Episode({ episode }: EpisodeProps ) {
           src={episode.thumbnail}
           objectFit="cover"
         />
-        <button /*onClick={() => play(episode)}*/>
+        <button onClick={() => play(episode)}>
           <img src="/play.svg" alt="Tocar episódio"/>
         </button>
       </div>
@@ -83,9 +84,9 @@ export default function Episode({ episode }: EpisodeProps ) {
 export const getStaticPaths: GetStaticPaths = async () => {
   const { data } = await api.get('episodes', {
     params: {
-      __limit: 2,
-      __sort: 'published_at',
-      __order: 'desc'
+      _limit: 2,
+      _sort: 'published_at',
+      _order: 'desc'
     }
   })
 
