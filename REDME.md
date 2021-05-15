@@ -35,8 +35,8 @@
 ### Demonstração
 
 <div>
-  <img src="https://github.com/tavareshenrique/podcastr-nlw/blob/main/src/assets/previews/PM1.gif?raw=true" width="400" />
-  <img src="https://github.com/tavareshenrique/podcastr-nlw/blob/main/src/assets/previews/PM2.gif?raw=true" width="400" />
+  <img src="https://raw.githubusercontent.com/tavareshenrique/podcastr-nlw/main/src/assets/previews/preview1.png" width="400" />
+  <img src="https://raw.githubusercontent.com/tavareshenrique/podcastr-nlw/main/src/assets/previews/preview2.png" width="400" />
 </div>
 
 # :computer: Tecnologias
