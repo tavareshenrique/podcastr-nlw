@@ -75,10 +75,10 @@ yarn server
 >
 > Caso não tenha o **JSON Server** instalado ou não saiba o que é, [acesse aqui.](https://github.com/typicode/json-server#getting-started)
 
-## 5. Inicie o Expo
+## 5. Inicie o Projeto
 
 ```bash
-yarn dev
+yarn start
 ```
 
 # :computer: Autores
