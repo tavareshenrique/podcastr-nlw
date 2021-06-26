@@ -43,8 +43,8 @@
 
 Este projeto foi feito utilizando as seguintes tecnologias:
 
-- [React](https://reactnative.dev/)
-- [NextJS](https://expo.io/)
+- [React](https://pt-br.reactjs.org/)
+- [NextJS](https://nextjs.org/)
 - [Typescript](https://www.typescriptlang.org/)
 - [Axios](https://github.com/axios/axios)
 - [date-fns](https://date-fns.org/)
